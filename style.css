@@ -1,0 +1,126 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* setter bakgrunnsbildet */
+    margin: 0;
+    position: relative;
+    overflow-x: hidden; /* gjør at man ikke kan scrolle */
+    width: 100vw;
+    height: 100vh;
+}
+#planets{
+    width: 1920px;
+    height: 100vh;
+}
+#sun{ /* oppretter en interactable runding over sola for å kunne lenke til andre steder, de andre nedover gjør det samme bare for ulike planeter */
+    z-index: 10;
+    position: absolute;
+    left: 45.6%;
+    top: 41.8%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+
+}
+#mercury{
+    z-index: 10;
+    position: absolute;
+    left: 56.5%;
+    top: 41.5%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+#venus{
+    z-index: 10;
+    position: absolute;
+    left: 44.7%;
+    top: 68%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#earth{
+    z-index: 10;
+    position: absolute;
+    left: 33.5%;
+    top: 35%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#moon{
+    z-index: 10;
+    position: absolute;
+    left: 38.1%;
+    top: 36%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+#mars{
+    z-index: 10;
+    position: absolute;
+    left: 66.8%;
+    top: 57%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#jupiter{
+    z-index: 10;
+    position: absolute;
+    left: 42.5%;
+    top: 6%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+
+}
+#saturn{
+    z-index: 10;
+    position: absolute;
+    left: 22%;
+    top: 57%;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+#uranus{
+    z-index: 10;
+    position: absolute;
+    left: 63.5%;
+    top: 77.9%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+#neptune{
+    z-index: 10;
+    position: absolute;
+    left: 76%;
+    top: 12.5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+#pluto{
+    z-index: 10;
+    position: absolute;
+    left: 14%;
+    top: 35.3%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+#main{ /* setter main (java-filen) til å være på lag 0, mens alt det andre som har blitt listet i css-en ligger på lag 10 sånn at det er foran */
+    z-index: 0;
+
+}
